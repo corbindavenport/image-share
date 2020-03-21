@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageShare</title>
+    <meta name="description" content="Share screenshots (and other images) from your game console to your phone/tablet.">
+    <meta name="keywords" content="imageshare, nintendo 3ds, nintendo ds, 3ds, 3ds image share, nintendo 3ds image share, nintendo wii u image share, wii u image share">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        nav {
+            background-color: #18bc9c;
+        }
+
+        .jumbotron {
+            background: url('hero.jpg') no-repeat center;
+            background-size: cover;
+            color: #FFF;
+            text-shadow: 0px 0px 5px #000;
+        }
+
+        .container>div,
+        .container>button {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="/">ImageShare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=4SZVSMJKDS35J&lc=US&item_name=ImageShare%20Donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Upload. Scan. Done.</h1>
+            <p class="lead">Send screenshots (and other images) to your phone or tablet instantly.</p>
+        </div>
+    </div>
+
+    <div class="container container-fluid">
+
+        <div class="card">
+            <div class="card-body">
+                ImageShare is a web-based image sharing tool, created by <a href="https://corbin.io">Corbin Davenport</a>. It's primarily designed for game consoles like the Nintendo 3DS, but it should also work on anything with a web browser.
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionInstall">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How to install on Nintendo 3DS
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionInstall">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3" style="padding: 0">
+                                    <img src="qr.png" style="max-width: 100%;">
+                                </div>
+                                <div class="col-9">
+                                    <ol>
+                                        <li>Press the <b>L + R</b> buttons on the home screen of the 3DS. This will open the camera.</li>
+                                        <li>Tap the QR code icon in the bottom-left corner of the touch screen.</li>
+                                        <li>Scan the QR code, and open the URL in the web browser when asked.</li>
+                                        <li>Tap the star button in the browser to bookmark the page.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Once installation is complete, just open the browser on your 3DS, tap the star button, and select ImageShare.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How to install on Nintendo Wii U
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionInstall">
+                    <div class="card-body">
+                        <ol>
+                            <li>Open the Internet Browser on your Wii U.</li>
+                            <li>Go to <b>https://imgsharetool.herokuapp.com</b> in the browser.</li>
+                            <li>Bookmark the page.</li>
+                        </ol>
+                        <p>Once installation is complete, just open the browser on your Wii U, and select ImageShare from your bookmarks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How to install on other devices
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionInstall">
+                    <div class="card-body">
+                        Go to <b>https://imgsharetool.herokuapp.com</b> on your device's web browser, and bookmark it for easy access later.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">How it works</h5>
+                <p>ImageShare uploads photos to <a href="http://imgbb.com/" target="_blank">Imgbb.com</a> and presents the URL as a QR code. This allows the image to be easily transfered to any device with the ability to scan QR codes. The camera apps on most iOS and Android devices can read QR codes, so you might not even need to install a separate app.</p>
+                <p>Images uploaded using ImageShare are subject to Imgbb’s <a href="https://imgbb.com/tos" target="_blank">Terms of Service</a> and <a href="https://imgbb.com/privacy" target="_blank">Privacy Policy</a>, and are deleted automatically after five minutes.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

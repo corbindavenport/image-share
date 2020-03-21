@@ -1,6 +1,0 @@
-{
-    "name": "corbindavenport/image-share",
-    "require": {
-        "ext-exif":"*"
-    }
-}
